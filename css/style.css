@@ -1,0 +1,203 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+* { 
+ font-family: 'Noto Sans KR', sans-serif;
+}
+
+body,ul,li{
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+.redesign{
+  width:1920px;
+  height:5415px;
+  background-color:#FFF7E9;
+}
+header{
+  width:1920px;
+  height:150px;
+/*   background-color:skyblue; */
+}
+
+input {
+  border:none;
+}
+input:focus {
+  outline:none;
+}
+
+
+
+
+/* 커스텀 */
+
+
+
+.header__top{
+  width:100%;
+  height:75px;
+  background-color:#FF623E;
+  display:flex;
+}
+
+.menu-1{
+  display:flex;
+  width:885px;
+  height:100%;
+  background-color:#FF623E;
+  justify-content:center;
+  align-items:center;
+}
+.header__top ul > li > a{
+  font-size:16px;
+  padding-right:40px;
+  color:#ffffff;
+  font-weight:bold;
+}
+
+.menu-2{
+  display:flex;
+  width:885px;
+  height:100%;
+  justify-content:center;
+}
+
+.icon > .fa-solid{
+  font-size:24px;
+  color:#ffffff;
+}
+
+.logo{
+  width:150px;
+  height:150px;
+}
+
+.icon-box{
+  font-size:0;
+  display:block;
+  padding:15px 35px 0 0;
+  /* 상 우 하 좌 */
+}
+
+.icon{
+  display:flex;
+  justify-content:center;
+}
+
+.icon-box > a{
+
+}
+
+.header__bottom{
+  width:100%;
+  height:75px;
+  display:flex;
+}
+
+.rank{
+  width:885px;
+  height:100%;
+/*  background-color:pink; */
+  padding-left:250px;
+}
+
+
+.rank > ul {
+  width:214px;
+  height:75px;
+  overflow:hidden;
+}
+
+.rank > ul > li {
+  width:214px;
+  height:75px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  /*border:1px solid red;*/
+  overflow:hiddeen;
+}
+
+.rank-num{
+  font-size:16px;
+  font-weight:bold;
+  color:#FF623E;
+}
+
+
+.more{
+  width:24px;
+  height:24px;
+  color:red;
+}
+
+.search{
+  width:885px;
+  height:75px;
+  padding:17.5px 0px 0px 425px;
+/* 상 우 하 좌 */
+}
+
+
+.input-box{
+}
+
+input {
+  border:3px solid #FF623E;
+  border-radius:20px;
+  padding:10px;
+  width:295px;
+  height:40px;
+}
+
+.input-box__placeholder {
+  position:relative;
+}
+
+.input-box__placeholder > label {
+  position:absolute;
+  top:50%;
+  left:20px;
+  transform:translatey(-50%);
+  font-size:0.8rem;
+  color:gray;
+}
+
+.input-box__placeholder > label > i {
+  margin-left:160px;
+}
+
+
+.input-box__placeholder > label.focus {
+  display:none;
+  margin-left:20px;
+}
+
+.product-name{
+  font-size:16px;
+}
+.slide{
+  width:100%;
+  height:700px;
+  background-color:black;
+}
+
+.main{
+  width:1200px;
+  height:3985px;
+  background-color:#ffffff;
+  margin-left:auto;
+  margin-right:auto;
+}
+.footer{
+  width:1920px;
+  height:580px;
+  background-color:skyblue;
+}
