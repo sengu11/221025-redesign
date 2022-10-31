@@ -154,7 +154,14 @@ input {
   height:40px;
 }
 
+
+.input-box{
+  width:295px;
+  height:40px;
+}
 .input-box__placeholder {
+  width:295px;
+  height:40px;
   position:relative;
 }
 
@@ -167,14 +174,17 @@ input {
   color:gray;
 }
 
-.input-box__placeholder > label > i {
-  margin-left:160px;
-}
-
 
 .input-box__placeholder > label.focus {
   display:none;
-  margin-left:20px;
+}
+
+.search-icon{
+  position:absolute;
+  right:10px;
+  top:9px;
+  font-size:22px;
+  color:#FF623E;
 }
 
 .product-name{
@@ -203,7 +213,7 @@ input {
 
 
 :root {
-    --swiper-theme-color: #343434 !important;
+    --swiper-theme-color: #ff623e !important;
 }
 
 .slider-box-1 .swiper {
@@ -216,13 +226,33 @@ input {
   justify-content:center;
   align-items:center;
   font-weight:bold;
+  position: relative;
 }
 
 .swiper-slide > span {
+  position:absolute;
   letter-spacing:10px;
   transition:3s;
+  font-weight:bold;
+  color:#ffffff;
+}
+
+.main-text{
+  top:60px;
+  left:230px;
+  font-size: 64px;
+}
+
+.sub-text{
+  top:150px;
+  left:230px;
+  font-size:32px;
 }
 
 .swiper-slide.swiper-slide-active > span {
   letter-spacing:0;
+}
+
+.swiper-pagination{
+  color:#ffffff;
 }
