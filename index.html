@@ -1,132 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>redesign</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script>
-    <!-- 제이쿼리 불러오기 -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<!-- 테일윈드 불러오기 -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" />
-<!-- 폰트어썸 불러오기 -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.1/swiper-bundle.css" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/script.js"></script>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.1/swiper-bundle.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.1/swiper-bundle.min.js"></script>
+
+
+
+  <title>redesign</title>
 </head>
-
-
 <body>
-    <section class="redesign">
-        <header>
-          <div class="header__top">
-            <ul class="menu-1">
-              <li><a href="#">전체메뉴</a></li>
-              <li><a href="#">기획전</a></li>
-              <li><a href="#">추천상품</a></li>
-              <li><a href="#">레시피</a></li>
-            </ul>
-            <div class="logo">
-              <a href="#"><img src="https://i.postimg.cc/7Y1YCwmj/image.png" alt=""></a>
-            </div>
-            <ul class="menu-2">
-              <li class="icon-box">
-                <a href="#">
-                  <div class="icon"><i class="fa-solid fa-arrow-right-to-bracket"></i></div>
-                  <div class="name">로그인</div>
-                </a>
-              </li>
-              <li class="icon-box">
-                <a href="#">
-                  <div class="icon"><i class="fa-solid fa-truck"></i></div>
-                  <div class="name">주문 / 배송조회</div>
-                </a>
-              </li>
-              <li class="icon-box">
-                <a href="#">
-                  <div class="icon"><i class="fa-solid fa-cart-shopping"></i></div>
-                  <div class="name">장바구니</div>
-                </a>
-              </li>
-            </ul>
-      
-          </div>
-          <div class="header__bottom">
-            <div class="rank">
-              <ul>
-                <li class="ranking">
-                  <p class="rank-num">1</p><a href="#">
-                    <p class="product-name">청송사과</p>
-                  </a><a href="#"><i class="fa-solid fa-angle-down more"></i></a>
-                </li>
-                <li class="ranking">
-                  <p class="rank-num">1</p><a href="#">
-                    <p class="product-name">청송사과</p>
-                  </a><a href="#"><i class="fa-solid fa-angle-down more"></i></a>
-                </li>
-                <li class="ranking">
-                  <p class="rank-num">1</p><a href="#">
-                    <p class="product-name">청송사과</p>
-                  </a><a href="#"><i class="fa-solid fa-angle-down more"></i></a>
-                </li>
-                <li class="ranking">
-                  <p class="rank-num">1</p><a href="#">
-                    <p class="product-name">청송사과</p>
-                  </a><a href="#"><i class="fa-solid fa-angle-down more"></i></a>
-                </li>
-                <li class="ranking">
-                  <p class="rank-num">1</p><a href="#">
-                    <p class="product-name">청송사과</p>
-                  </a><a href="#"><i class="fa-solid fa-angle-down more"></i></a>
-                </li>
-                <li class="ranking">
-                  <p class="rank-num">1</p><a href="#">
-                    <p class="product-name">청송사과</p>
-                  </a><a href="#"><i class="fa-solid fa-angle-down more"></i></a>
-                </li>
-                <li class="ranking">
-                  <p class="rank-num">1</p><a href="#">
-                    <p class="product-name">청송사과</p>
-                  </a><a href="#"><i class="fa-solid fa-angle-down more"></i></a>
-                </li>
-                <li class="ranking">
-                  <p class="rank-num">1</p><a href="#">
-                    <p class="product-name">청송사과</p>
-                  </a><a href="#"><i class="fa-solid fa-angle-down more"></i></a>
-                </li>
-                <li class="ranking">
-                  <p class="rank-num">1</p><a href="#">
-                    <p class="product-name">청송사과</p>
-                  </a><a href="#"><i class="fa-solid fa-angle-down more"></i></a>
-                </li>
-                <li class="ranking">
-                  <p class="rank-num">1</p><a href="#">
-                    <p class="product-name">청송사과</p>
-                  </a><a href="#"><i class="fa-solid fa-angle-down more"></i></a>
-                </li>
-              </ul>
-            </div>
-            <div class="search">
-              <div class="input-box">
-                <div class="input-box__placeholder">
-                  <label for="search">맛 찾으러 가기
-                    <i class="fa-solid fa-magnifying-glass"></i></label>
-                  <input type="text" id="search">
-                </div>
-              </div>
-            </div>
-          </div>
-        </header>
-        <div class="slide">
+  <section class="redesign">
+    <header>
+      <div class="header__top">
+        <ul class="menu-1">
+          <li><a href="#">전체메뉴</a></li>
+          <li><a href="#">기획전</a></li>
+          <li><a href="#">추천상품</a></li>
+          <li><a href="#">레시피</a></li>
+        </ul>
+        <div class="logo">
+          <a href="#"><img src="./images/맛찾사-로고(배경있).png" alt=""></a>
+        </div>
+        <ul class="menu-2">
+          <li class="icon-box">
+            <a href="#">
+              <div class="icon"><i class="fa-solid fa-arrow-right-to-bracket"></i></div>
+              <div class="name">로그인</div>
+            </a>
+          </li>
+          <li class="icon-box">
+            <a href="#">
+              <div class="icon"><i class="fa-solid fa-truck"></i></div>
+              <div class="name">주문 / 배송조회</div>
+            </a>
+          </li>
+          <li class="icon-box">
+            <a href="#">
+              <div class="icon"><i class="fa-solid fa-cart-shopping"></i></div>
+              <div class="name">장바구니</div>
+            </a>
+          </li>
+        </ul>
+  
+      </div>
+      <div class="header__bottom">
+        <div class="rank">
           <ul>
-            <li><a href="#"><img src="" alt=""></a></li>
-            <li><a href="#"><img src="" alt=""></a></li>
-            <li><a href="#"><img src="" alt=""></a></li>
+            <li class="ranking">
+              <p class="rank-num">1</p><a href="#">
+                <p class="product-name">청송사과</p>
+              </a><a href="#"><i class="fa-solid fa-angle-down more"></i></a>
+            </li>
+            <li class="ranking">
+              <p class="rank-num">1</p><a href="#">
+                <p class="product-name">청송사과</p>
+              </a><a href="#"><i class="fa-solid fa-angle-down more"></i></a>
+            </li>
+            <li class="ranking">
+              <p class="rank-num">1</p><a href="#">
+                <p class="product-name">청송사과</p>
+              </a><a href="#"><i class="fa-solid fa-angle-down more"></i></a>
+            </li>
+            <li class="ranking">
+              <p class="rank-num">1</p><a href="#">
+                <p class="product-name">청송사과</p>
+              </a><a href="#"><i class="fa-solid fa-angle-down more"></i></a>
+            </li>
+            <li class="ranking">
+              <p class="rank-num">1</p><a href="#">
+                <p class="product-name">청송사과</p>
+              </a><a href="#"><i class="fa-solid fa-angle-down more"></i></a>
+            </li>
+            <li class="ranking">
+              <p class="rank-num">1</p><a href="#">
+                <p class="product-name">청송사과</p>
+              </a><a href="#"><i class="fa-solid fa-angle-down more"></i></a>
+            </li>
+            <li class="ranking">
+              <p class="rank-num">1</p><a href="#">
+                <p class="product-name">청송사과</p>
+              </a><a href="#"><i class="fa-solid fa-angle-down more"></i></a>
+            </li>
+            <li class="ranking">
+              <p class="rank-num">1</p><a href="#">
+                <p class="product-name">청송사과</p>
+              </a><a href="#"><i class="fa-solid fa-angle-down more"></i></a>
+            </li>
+            <li class="ranking">
+              <p class="rank-num">1</p><a href="#">
+                <p class="product-name">청송사과</p>
+              </a><a href="#"><i class="fa-solid fa-angle-down more"></i></a>
+            </li>
+            <li class="ranking">
+              <p class="rank-num">1</p><a href="#">
+                <p class="product-name">청송사과</p>
+              </a><a href="#"><i class="fa-solid fa-angle-down more"></i></a>
+            </li>
           </ul>
         </div>
-        <div class="main"></div>
-        <div class="footer"></div>
-      </section>
+        <div class="search">
+          <div class="input-box">
+            <div class="input-box__placeholder">
+              <label for="search">맛 찾으러 가기
+                <i class="fa-solid fa-magnifying-glass"></i></label>
+              <input type="text" id="search">
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+  <div class="slider-box-1">
+  
+    <!-- 슬라이더 메인 컨테이너 -->
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <!-- 슬라이드 -->
+        <div class="swiper-slide">
+          <span>슬라이드 1</span>
+        </div>
+        <div class="swiper-slide">
+          <span>슬라이드 2</span>
+        </div>
+        <div class="swiper-slide">
+          <span>슬라이드 3</span>
+        </div>
+        <div class="swiper-slide">
+          <span>슬라이드 4</span>
+        </div>
+        <div class="swiper-slide">
+          <span>슬라이드 5</span>
+        </div>
+      </div>
+      <!-- 슬라이드 페이지 -->
+      <div class="swiper-pagination"></div>
+  
+      <!-- 화살표 -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>   
+      
+    </div>
+  
+  </div>
+    <div class="main"></div>
+    <div class="footer"></div>
+  </section>
 </body>
 </html>
