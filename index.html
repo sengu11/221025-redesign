@@ -33,7 +33,7 @@
           <li><a href="#">레시피</a></li>
         </ul>
         <div class="logo">
-          <a href="#"><img src="./images/맛찾사-로고(배경있).png" alt=""></a>
+          <a href="#"><img src="./images/logo.png" alt=""></a>
         </div>
         <ul class="menu-2">
           <li class="icon-box">
@@ -59,65 +59,56 @@
       </div>
       <div class="header__bottom">
         <div class="rank">
-          <ul>
-            <li class="ranking">
-              <p class="rank-num">1</p><a href="#">
-                <p class="product-name">청송사과</p>
-              </a><a href="#"><i class="fa-solid fa-angle-down more"></i></a>
-            </li>
-            <li class="ranking">
-              <p class="rank-num">1</p><a href="#">
-                <p class="product-name">청송사과</p>
-              </a><a href="#"><i class="fa-solid fa-angle-down more"></i></a>
-            </li>
-            <li class="ranking">
-              <p class="rank-num">1</p><a href="#">
-                <p class="product-name">청송사과</p>
-              </a><a href="#"><i class="fa-solid fa-angle-down more"></i></a>
-            </li>
-            <li class="ranking">
-              <p class="rank-num">1</p><a href="#">
-                <p class="product-name">청송사과</p>
-              </a><a href="#"><i class="fa-solid fa-angle-down more"></i></a>
-            </li>
-            <li class="ranking">
-              <p class="rank-num">1</p><a href="#">
-                <p class="product-name">청송사과</p>
-              </a><a href="#"><i class="fa-solid fa-angle-down more"></i></a>
-            </li>
-            <li class="ranking">
-              <p class="rank-num">1</p><a href="#">
-                <p class="product-name">청송사과</p>
-              </a><a href="#"><i class="fa-solid fa-angle-down more"></i></a>
-            </li>
-            <li class="ranking">
-              <p class="rank-num">1</p><a href="#">
-                <p class="product-name">청송사과</p>
-              </a><a href="#"><i class="fa-solid fa-angle-down more"></i></a>
-            </li>
-            <li class="ranking">
-              <p class="rank-num">1</p><a href="#">
-                <p class="product-name">청송사과</p>
-              </a><a href="#"><i class="fa-solid fa-angle-down more"></i></a>
-            </li>
-            <li class="ranking">
-              <p class="rank-num">1</p><a href="#">
-                <p class="product-name">청송사과</p>
-              </a><a href="#"><i class="fa-solid fa-angle-down more"></i></a>
-            </li>
-            <li class="ranking">
-              <p class="rank-num">1</p><a href="#">
-                <p class="product-name">청송사과</p>
-              </a><a href="#"><i class="fa-solid fa-angle-down more"></i></a>
-            </li>
-          </ul>
-          
+
+          <!-- 슬라이더 메인 컨테이너 -->
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <!-- 슬라이드 -->
+              <div class="swiper-slide">
+                <div class="ranking">
+                <p class="rank-num">1</p><a href="#">
+                <p class="product-name">세척사과</p></div></div>
+              <div class="swiper-slide">
+                <div class="ranking">
+                <p class="rank-num">2</p><a href="#">
+                <p class="product-name">타트체리</p></div></div><div class="swiper-slide">
+                <div class="ranking">
+                <p class="rank-num">3</p><a href="#">
+                <p class="product-name">과메기</p></div></div><div class="swiper-slide">
+                <div class="ranking">
+                <p class="rank-num">4</p><a href="#">
+                <p class="product-name">감귤</p></div></div><div class="swiper-slide">
+                <div class="ranking">
+                <p class="rank-num">5</p><a href="#">
+                <p class="product-name">가리비</p></div></div><div class="swiper-slide">
+                <div class="ranking">
+                <p class="rank-num">6</p><a href="#">
+                <p class="product-name">청송사과</p></div></div><div class="swiper-slide">
+                <div class="ranking">
+                <p class="rank-num">7</p><a href="#">
+                <p class="product-name">유기농</p></div></div><div class="swiper-slide">
+                <div class="ranking">
+                <p class="rank-num">8</p><a href="#">
+                <p class="product-name">곱창</p></div></div><div class="swiper-slide">
+                <div class="ranking">
+                <p class="rank-num">9</p><a href="#">
+                <p class="product-name">체리</p></div></div><div class="swiper-slide">
+                <div class="ranking">
+                <p class="rank-num">10</p><a href="#">
+                <p class="product-name">김부각</p></div></div>
+            </div>
+        
+            <!-- 화살표 -->
+            <div class="swiper-button-next"><i class="fa-solid fa-chevron-down"></i></div>   
+            
+          </div>
+        
         </div>
-        <div class="search">
+        <div class="search-box">
           <div class="input-box">
             <div class="input-box__placeholder">
-              <label for="search">맛 찾으러 가기</label>
-                <a href="#"><i class="fa-solid fa-magnifying-glass search-icon"></i></a>
+              <label for="search">맛 찾으러 떠나기</label>
+              <a href="#"><i class="fas fa-search"></i></a>
               <input type="text" id="search">
             </div>
           </div>
@@ -132,18 +123,19 @@
     <div class="swiper">
       <div class="swiper-wrapper">
         <!-- 슬라이드 -->
-        <div class="swiper-slide">
+        <div class="swiper-slide jamong">
           <img src="images/slide-1.jpg" alt="">
           <span class="main-text">신선함이 남다른 레드빛 과육</span>
           <span class="sub-text">큼직한 크기 속의 풍성한 즐거움</span>
         </div>
         <div class="swiper-slide">
-          <span class="main-text">신선함이 남다른 레드빛 과육</span>
-          <span class="sub-text"></span>
+          <img src="images/slide-2.jpg" alt="">
+          <span class="main-text">햇살을 듬뿍 받고 자란 캘리포니아 오렌지</span>
+          <span class="sub-text">씨 없는 네이블 오렌지</span>
         </div>
         <div class="swiper-slide">
           <span class="main-text">신선함이 남다른 레드빛 과육</span>
-          <span class="sub-text"></span>
+          <span class="sub-text">씨 없는 네이블 오렌지</span>
         </div>
         <div class="swiper-slide">
           <span class="main-text">신선함이 남다른 레드빛 과육</span>
