@@ -14,6 +14,10 @@
       // Optional parameters
       loop: true,
 
+      autoplay:{
+        delay:5000,
+        disableOnInteraction : false,
+        },
 
       // If we need pagination
       pagination: {
