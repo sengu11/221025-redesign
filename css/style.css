@@ -1,5 +1,11 @@
 @charset "UTF-8";
 @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+@font-face {c
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Danjunghae.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 * { 
  font-family: 'Noto Sans KR', sans-serif;
@@ -66,16 +72,23 @@ input:focus {
   padding:15px;
 }
 
+.header__top ul > li:hover {
+  background-color: antiquewhite;
+  cursor: pointer;
+}
+
 .header__top ul > li > a{
   font-size:16px;
   color:#ffffff;
   font-weight:bold;
   width:100%;
-  height:100%;
+  height:75px;
 }
 
-.header__top ul > li:hover {
+.header__top ul > li:hover > a {
   background-color: antiquewhite;
+  cursor: pointer;
+  color:#FF623E;
 }
 
 .menu-2{
@@ -217,7 +230,6 @@ label {
 
 .input-box__placeholder > label.focus {
   display: none;
-  background-color: pink;
 }
 
 
@@ -230,7 +242,7 @@ label {
 .main{
   width:1200px;
   height:3985px;
-  background-color:rgb(139, 139, 133);
+  /* background-color:rgb(139, 139, 133); */
   margin-left:auto;
   margin-right:auto;
 }
@@ -246,7 +258,9 @@ label {
 :root {
     --swiper-theme-color: #ff623e !important;
 }
-.slider-box{
+
+.slider-box-1{
+  margin-bottom: 160px;
 }
 
 .slider-box-1 .swiper {
@@ -334,4 +348,241 @@ label {
 
 .slide-prev > .round{
   margin-left:10px;
+}
+
+.special{
+  width:1200px;
+  height:650px;
+  
+  margin-bottom: 160px;
+}
+.special-title{
+  width:100%;
+  height:100px;
+  display: block;
+  /* background-color: beige; */
+  font-weight: bold;
+  font-size: 30pt;
+  text-align: center;
+  padding-top:20px;
+  box-sizing: border-box;
+}
+
+.special-box{
+  display: flex;
+}
+
+.special{
+  border-radius: 100px;
+}
+.special__box-1,
+.special__box-2,
+.special__box-3{
+  position: relative;
+  border-radius: 50px 0 50px 0;
+  /* 시계방향 */
+  background-color: aqua;
+  overflow: hidden;
+}
+
+.special__box-2{
+  transition: 0.5s;
+}
+
+.special-text{
+  position: absolute;
+  width:100%;
+  height:130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  bottom:0;
+  color: #ffffff;
+  font-family: 'Cafe24Danjunghae';
+}
+
+.special__name{
+  height:50px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  align-items: center;
+  display: flex;
+  padding: 0 10px;
+  border-radius: 50px;
+  font-size: 20pt;
+  position:absolute;
+  top:-30px;
+}
+
+
+
+.special__main{
+  font-size:30px;
+}
+
+.special__sub{
+  font-size: 15px;
+}
+
+
+.special__box-1 > .special-text{
+  background-color: #A40106;
+}
+
+.special__box-1 > .special-text > .special__name{
+  background-color: #A40106;
+}
+
+.special__box-2 > .special-text{
+  background-color: #FE7804;
+}
+.special__box-2 > .special-text > .special__name{
+  background-color: #FE7804;
+}
+.special__box-3 > .special-text{
+  background-color: #DCB73C;
+}
+
+.special__box-3 > .special-text > .special__name{
+  background-color: #DCB73C;
+}
+
+.hidden-box{
+  width:850px;
+  height:550px;
+  background-color: #A40106;
+  border-radius: 0 0 50px 0;
+  position: absolute;
+  left:710px;
+  z-index: 999;
+  font-size: 30px;
+  line-height: 40px;
+  color: #ffffff;
+  padding:45px;
+  box-sizing: border-box;
+  display: none;
+}
+
+
+.hidden__button{
+  width:100%;
+  height:80px;
+  display: flex;
+  align-items: center;
+  margin-top:40px;
+}
+
+.hidden__button > .buy{
+  width:550px;
+  height:80px;
+  background-color:#FF623E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  border-radius: 20px;
+}
+
+.hidden__button > .shopping{
+  background-color:#ffffff;
+  color:#FF623E;
+  border-radius: 10px;
+  width:100px;
+  height:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:0 10px;
+}
+.hidden__button > .heart{
+  background-color:#ffffff;
+  color:#FF623E;
+  border-radius: 10px;
+  width:100px;
+  height:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.hidden-main{
+  font-weight: bold;
+  height:100px;
+  font-size: 50px;
+}
+
+/* .special__box-2:hover {
+  transform:translate(-400px,0);
+} */
+
+/* .special__box-1:hover ~ .hidden-box-1{
+  display: block;
+} */
+
+
+.how{
+  width:1200px;
+  height:1230px;
+  background-color: #DCB73C;
+}
+
+.how__title{
+  width:100%;
+  height:100px;
+  display: block;
+  /* background-color: beige; */
+  font-weight: bold;
+  font-size: 30pt;
+  text-align: center;
+  padding-top:20px;
+  box-sizing: border-box;
+}
+
+.menu-box {
+  background-color:#FCF8E8;
+}
+
+.menu-box > ul {
+  display:flex;
+  justify-content: center;
+  padding:50px;
+}
+
+.menu-box > ul > li > a {
+  display:block;
+  padding:10px 0;
+  margin:0 8px;
+  position:relative;
+  font-size: 20px;
+  font-weight:bold;
+}
+
+
+/* 밑줄 커스텀 */
+.menu-box > ul > li > a::after {
+  content:"";
+  position:absolute;
+  bottom:0;
+  width:0;
+  height:5px;
+  background-color:#FE7804;
+  color:#FE7804;
+  transition:0.3s;
+}
+
+.menu-box > ul > li:hover > a::after {
+  width:100%;
+}
+
+
+/* 각 위치 조절 */
+.menu-box-1 > ul > li > a::after {
+  left:0;
+}
+
+.farm > .img-box > .product-box {
+  display:inline-block;
 }

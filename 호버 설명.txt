@@ -1,0 +1,54 @@
+      <div class="hidden-box hidden-box-1">
+            <p class="hidden-main">부사의 제철은 11~12월로 지금 가장 맛이 좋습니다!</p>
+            <p class="hidden-sub">
+            맛찾사에서 판매하는 사과는 제초제를 치지 않으며 인위적으로 사과의 색을 내기 위한 착색제를 치지 않습니다.<br>
+            또한, 사과의 크기를 좋게하기 위한 생장촉진제를 사용하지 <br>않습니다.</p>
+           <p class="price">34,900</p><p class="sale>24,400</p>
+        <div class="hidden__button">
+          <div class="buy"><a href="#">바로 구매</a></div>
+          <div class="shopping"><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></div>
+          <a href="#" class="heart"><i class="fa-regular fa-heart"></i></a>
+        </div>
+          </div>
+  
+
+
+
+        <div class="hidden-box hidden-box-2">
+            <p class="hidden-main">제주 제철 노지 조생감귤 수확 시작!</p>
+            <p class="hidden-sub">새콤달콤 깊고 진한 맛 제주 산지에서 보내드리는 제철 노지 감귤! 제주 해풍으로 키웠습니다</p>
+           <p class="price">24,700</p><p class="sale>19,000</p>
+        <div class="hidden__button">
+          <div class="buy"><a href="#">바로 구매</a></div>
+          <div class="shopping"><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></div>
+          <a href="#" class="heart"><i class="fa-regular fa-heart"></i></a>
+        </div>
+          </div>
+
+
+    
+
+
+          <div class="hidden-box hidden-box-3">
+            <p class="hidden-main">스테비아 농법으로 저장성 UP 당도 UP</p>
+            <p class="hidden-sub">
+           90일 이상 속이 꽉찬 배추만을 선별하여 3년간 간수를 뺀 신안 천일염으로 절인 명품 절임배추입니다.</p>
+        <div class="hidden__button">
+          <div class="buy"><a href="#">바로 구매</a></div>
+          <div class="shopping"><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></div>
+          <a href="#" class="heart"><i class="fa-regular fa-heart"></i></a>
+        </div>
+          </div
+
+
+
+
+
+
+
+
+
+
+
+
+>
