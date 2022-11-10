@@ -577,12 +577,62 @@ label {
   width:100%;
 }
 
-
-/* 각 위치 조절 */
 .menu-box-1 > ul > li > a::after {
   left:0;
 }
 
-.farm > .img-box > .product-box {
-  display:inline-block;
+.farm{
+  display:flex;
+  flex-wrap:wrap;
+  width:1200px;
+  height:900px;
+}
+
+.farm > .img-list {
+  margin-bottom:50px;
+}
+
+.farm > .img-list > .text {
+  width:360px;
+  height:80px;
+  vertical-align: bottom;
+  background-color: #FCF8E8;
+}
+
+.farm > .img-list > .text > .pop > p {
+  display: inline-block;
+  font-size: 15px;
+  margin-left:10px;
+  border-radius: 20%;
+}
+
+.farm > .img-list > .text > .pop > .new {
+  border:4px solid #FFCE31;
+  color: #FFCE31;
+}
+
+.farm > .img-list > .text > .pop > .sale {
+  border:4px solid #FF623E;
+  color: #FF623E;
+  padding:0 5px;
+}
+
+.farm > .img-list > .text > .name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.farm > .img-list > .text > .price {
+  font-size:16px;
+}
+
+.farm > .img-list > .img-box {
+  margin-bottom:20px;
+}
+
+.img-list:nth-child(2){
+  padding:0 60px;
+}
+.img-list:nth-child(5){
+  padding:0 60px;
 }
