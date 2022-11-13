@@ -602,19 +602,19 @@ label {
 .farm > .img-list > .text > .pop > p {
   display: inline-block;
   font-size: 15px;
-  margin-left:10px;
-  border-radius: 20%;
+  border-radius: 30%;
 }
 
 .farm > .img-list > .text > .pop > .new {
   border:4px solid #FFCE31;
   color: #FFCE31;
+  padding:5px 10px;
 }
 
 .farm > .img-list > .text > .pop > .sale {
   border:4px solid #FF623E;
   color: #FF623E;
-  padding:0 5px;
+  padding:0 10px;
 }
 
 .farm > .img-list > .text > .name {
