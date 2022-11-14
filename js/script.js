@@ -62,3 +62,13 @@
   
   Rank__init();
   
+
+
+  $('.btn a').click(function(){
+    $('.btn a').removeClass('active');
+    $(this).addClass('active');
+
+    var i = $(this).parent().index();
+    $('.bwrap > section').fadeOut(0);
+    $('.bwrap > section').eq(i).fadeIn(0);
+  });
