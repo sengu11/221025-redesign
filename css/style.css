@@ -246,11 +246,7 @@ label {
   margin-left:auto;
   margin-right:auto;
 }
-.footer{
-  width:1920px;
-  height:580px;
-  background-color:skyblue;
-}
+
 
 .title{
   width:100%;
@@ -538,10 +534,7 @@ h3{
   /* background-color: #DCB73C; */
 }
 
-.board{
-  height:30px;
-  /* background-color: #A40106; */
-}
+
 
 .btn{
   width:100%;
@@ -667,6 +660,7 @@ h3{
 .more-product {
   display: flex;
   justify-content: center;
+  margin-top:50px;
 }
 
 .more-product > a {
@@ -680,9 +674,8 @@ h3{
   height:30px;
 }
 
-.more-product > div > i {
-  display: flex;
-  align-items: center;
+.more-product i {
+  color:#FF623E;
 }
 
 
@@ -691,4 +684,181 @@ h3{
   height:235px;
   display: flex;
   padding:160px 0;
+  margin-bottom:160px;
+}
+
+.banner > div {
+  box-shadow: 3px 10px 15px -7px rgba(0,0,0,1);
+}
+
+
+.recipe{
+  width:1200px;
+  height:760px;
+  display: flex;
+  margin-top:160px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.recipe__box{
+  display:flex;
+  justify-content:center;
+  flex-direction:column;
+  gap:5px 0;
+}
+
+
+.recipe__box p{
+  text-align: center;
+}
+
+.recipe__box .name {
+  font-size: 20px;
+}
+
+.recipe__box .level{
+  font-size: 12px;
+}
+
+.recipe__box .squre{
+  display: flex;
+  flex-direction: row;
+  gap:10px;
+  width: 420px;
+  justify-content:center;
+  margin-bottom:20px;
+}
+
+.recipe__box .squre__1 {
+  width:40px;
+  height:20px;
+  background-color:#FF623E;
+}
+.recipe__box .squre__2 {
+  width:40px;
+  height:20px;
+  background-color:#FF623E;
+  opacity: 85%;
+}
+.recipe__box .squre__3 {
+  width:40px;
+  height:20px;
+  background-color:#FF623E;
+  opacity: 70%;
+}
+.recipe__box .squre__4 {
+  width:40px;
+  height:20px;
+  background-color:#FF623E;
+  opacity: 55%;
+}
+.recipe__box .squre__5 {
+  width:40px;
+  height:20px;
+  background-color:#FF623E;
+  opacity: 40%;
+}
+
+.recipe__box a {
+  display:flex;
+  justify-content:center;
+}
+
+.recipe__box-2 > .recipe__text{
+  width:330px;
+  height:100px;
+  display: flex;
+  font-size: 36px;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.recipe__box-2 > .recipe__text > .two {
+  font-size: 40px;
+  color:#ff623e;
+  text-decoration: underline;
+}
+
+.recipe__look{
+  font-size: 12px;
+  color:#828282;
+  margin-top:0 10px;
+  height:24px;
+  display: flex;
+  justify-content: center;
+}
+
+.recipe__look i {
+  color:#ff623e;
+  display: flex;
+  align-items: center;
+
+}
+
+.recipe__look a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.best-review{
+  width:1200px;
+  height:400px;
+  margin-top:160px;
+}
+
+.review-box{
+  height:100px;
+  display: flex;
+  padding-left:10px;
+}
+
+.img-box{
+  width:80px;
+  height:80px;
+  padding: 0 10px;
+  border-radius: 100%;
+  overflow:hidden;
+  position: relative;
+}
+
+
+.img-box > img {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.text-box{
+  padding:0 10px;
+  color:#585656;
+  font-size: 16px;
+}
+.top-text{
+  display: flex;
+  width:1060px;
+  height:30px;
+  border-bottom: 1px solid #C0C0C0;
+  gap:0 10px;
+}
+
+.text-box > .review-contents{
+  width:1060px;
+  height:70px;
+  font-size: 15px;
+}
+
+.review-name{
+  font-weight:bold;
+}
+.star{
+  color:#FFCE31;
 }
