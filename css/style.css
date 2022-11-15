@@ -24,7 +24,6 @@ a{
 
 .redesign{
   width:1920px;
-  height:5415px;
 }
 header{
   width:1920px;
@@ -88,6 +87,10 @@ input:focus {
 .header__top ul > li:hover > a {
   background-color: antiquewhite;
   cursor: pointer;
+  color:#FF623E;
+}
+
+.header__top ul > li:hover > a > .icon > i {
   color:#FF623E;
 }
 
@@ -241,7 +244,6 @@ label {
 
 .main{
   width:1200px;
-  height:3985px;
   /* background-color:rgb(139, 139, 133); */
   margin-left:auto;
   margin-right:auto;
@@ -627,6 +629,7 @@ h3{
   flex: none;
   order: 0;
   flex-grow: 0;
+  border-radius: 100px;
 }
 
 .text > .pop > .sale {
@@ -640,6 +643,7 @@ h3{
   flex: none;
   order: 0;
   flex-grow: 0;
+  border-radius: 100px;
 }
 
 .text > .name {
@@ -809,7 +813,7 @@ h3{
 .best-review{
   width:1200px;
   height:400px;
-  margin-top:160px;
+  margin:160px 0;
 }
 
 .review-box{
@@ -861,4 +865,129 @@ h3{
 }
 .star{
   color:#FFCE31;
+}
+
+.footer{
+  width:1920px;
+  height:420px;
+  background-color: #FFB566;
+  color:#ffffff;
+}
+
+.footer__top-menu{
+  width:100%;
+  height:44px;
+  border-bottom:1px solid #ffffff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color:#ffffff;
+  padding:0 160px;
+}
+
+
+
+.left-menu > a {
+  padding: 0 70px;
+}
+
+.right-icon > a {
+  padding: 0 10px;
+}
+
+.mid-contents {
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+  padding:20px 360px;
+  color:#ffffff;
+}
+
+.notice{
+  width:400px;
+  height:300px;
+  padding:57.5px 44.5px;
+}
+.notice__title{
+  width:300px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight:bold;
+  padding-bottom:20px;
+}
+
+.notice__title a {
+  font-size: 12px;
+}
+.notice > ul li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.notice > ul > li:hover a{
+  text-decoration: underline;
+}
+.cs-center{
+  width:400px;
+  height:300px;
+  padding:30px;
+  border-left:1px solid #ffffff;
+  border-right:1px solid #ffffff;
+}
+
+.cs-center__title{
+  font-size:15px;
+  font-weight: bold;
+}
+
+.cs-center__number {
+  font-size: 30px;
+}
+
+.time{
+  display: flex;
+  flex-direction: column;
+  padding:10px 0;
+}
+
+.holiday {
+  padding-bottom:10px;
+}
+
+.cs-center__btn {
+  display: flex;
+  justify-content: space-between;
+  gap:0 20px;
+  font-size: 15px;
+  padding:10px 0;
+}
+
+.cs-center__btn div {
+  border:1px solid #ffffff;
+  padding:10px;
+  width:150px;
+  text-align: center;
+  border-radius: 100px;
+}
+
+.cs-center__btn div:hover {
+  background-color: #ffffff;
+  color:#FFB566;
+}
+
+.introduce {
+  width:400px;
+  height:300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding:30px 0;
+  font-size: 15px;
+  color:#ffffff;
+}
+
+.copy{
+  text-align: center;
+  font-size: 15px;
 }
