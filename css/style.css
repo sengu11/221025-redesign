@@ -24,6 +24,7 @@ a{
 
 .redesign{
   width:1920px;
+  position: relative;
 }
 header{
   width:1920px;
@@ -44,6 +45,74 @@ input:focus {
 /* 커스텀 */
 
 
+
+.full-menu {
+  width:100%;
+  height:175px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 99999;
+  padding-top:75px;
+}
+/* .bg-color{
+  position: absolute;
+  width:1920px;
+  height:240px;
+  margin-top:75px;
+  background-color: #FF623E;
+  z-index: 99998;
+} */
+
+.full-menu > ul {
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.full-menu li {
+  display: flex;
+  width:185px;
+  height:40px;
+  display: flex;
+  flex-direction: row;
+}
+
+.main-menu{
+  background-color: #FE7804;
+  color:#ffffff;
+  display: flex;
+  width:185px;
+  justify-content: center;
+  font-weight:bold;
+  font-size:15px;
+  align-items:center;
+}
+
+.sub-menu {
+  position: absolute;
+  margin-top:40px;
+  height: 240px;
+}
+
+.sub-menu a {
+  display: flex;
+  width:185px;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+}
+
+.sub-menu a:hover {
+  font-size:16px;
+  font-weight:bold;
+  color:#ffffff;
+  background-color: #FF623E;
+}
+
+.sub__full-menu{
+  color: #FF623E;
+}
 
 .header__top{
   width:100%;
