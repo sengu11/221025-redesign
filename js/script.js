@@ -47,16 +47,7 @@
       delay:2500,
       disableOnInteraction : false,
       },
-      // If we need pagination
-      pagination: {
-        el: ".rank .swiper-pagination"
-      },
-  
-      // Navigation arrows
-      navigation: {
-        nextEl: ".rank .swiper-button-next",
-        prevEl: ".rank .swiper-button-prev"
-      }
+
     });
   }
   
@@ -71,4 +62,14 @@
     var i = $(this).parent().index();
     $('.bwrap > section').fadeOut(0);
     $('.bwrap > section').eq(i).fadeIn(0);
+  });
+
+
+
+  $(".more-rank").click(function(){
+    $(this).toggleClass("down");
+  });
+
+  $(".more-rank").click(function(){
+    $(".rank__full-menu").stop().fadeToggle(300);
   });

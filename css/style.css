@@ -45,24 +45,21 @@ input:focus {
 /* 커스텀 */
 
 
-
 .full-menu {
   width:100%;
-  height:175px;
+  height:285px;
   display: flex;
   justify-content: center;
-  position: relative;
-  z-index: 99999;
-  padding-top:75px;
-}
-/* .bg-color{
   position: absolute;
-  width:1920px;
-  height:240px;
-  margin-top:75px;
-  background-color: #FF623E;
-  z-index: 99998;
-} */
+  z-index: 99999;
+  left:0;
+  top:75px;
+  background-color: antiquewhite;
+  border-radius: 0 0 50px 50px;
+  overflow:hidden;
+  display: none;
+
+}
 
 .full-menu > ul {
   width:100%;
@@ -74,30 +71,25 @@ input:focus {
   display: flex;
   width:185px;
   height:40px;
-  display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .main-menu{
-  background-color: #FE7804;
-  color:#ffffff;
+  color:#FF623E;
   display: flex;
   width:185px;
-  justify-content: center;
+  line-height:40px;
   font-weight:bold;
   font-size:15px;
   align-items:center;
-}
-
-.sub-menu {
-  position: absolute;
-  margin-top:40px;
-  height: 240px;
+  justify-content: center;
+  border-bottom:1px solid #FF623E;
 }
 
 .sub-menu a {
   display: flex;
   width:185px;
+  height:40px;
   justify-content: center;
   align-items: center;
   font-size: 15px;
@@ -112,6 +104,10 @@ input:focus {
 
 .sub__full-menu{
   color: #FF623E;
+}
+
+.full:hover .full-menu{
+  display: block;
 }
 
 .header__top{
@@ -145,7 +141,9 @@ input:focus {
   cursor: pointer;
 }
 
-.header__top ul > li > a{
+.header__top > .menu-1 > li > a,
+.header__top > .menu-2 > li > a
+{
   font-size:16px;
   color:#ffffff;
   font-weight:bold;
@@ -153,11 +151,18 @@ input:focus {
   height:75px;
 }
 
-.header__top ul > li:hover > a {
+.header__top > .menu-1 > li:hover > a {
   background-color: antiquewhite;
   cursor: pointer;
   color:#FF623E;
 }
+
+.header__top > .menu-2 > li:hover > a {
+  background-color: antiquewhite;
+  cursor: pointer;
+  color:#FF623E;
+}
+
 
 .header__top ul > li:hover > a > .icon > i {
   color:#FF623E;
@@ -214,11 +219,17 @@ input:focus {
   width:24px;
   height:24px;
 /*   border:1px solid yellow; */
+  transition: all 0.3s linear;
 }
 
 .more-rank::after{
   display:none;
 }
+
+.more-rank.down{
+  transform:rotate(180deg);
+}
+
 
 .more-rank > i {
   width:24px;
@@ -229,6 +240,38 @@ input:focus {
   font-weight:bold;
   color:#FF623E;
   cursor:default;
+}
+
+
+
+.rank__full-menu{
+  width:210px;
+  height:749px;
+  border:2px solid #FF623E;
+  z-index: 100000;
+  background-color: #ffffff;
+  position: absolute;
+  top:150px;
+  left:280px;
+  border-top:none;
+  display: none;
+}
+
+.rank-contents {
+  height:75px;
+  display:flex;
+  align-items:center;
+}
+
+.num {
+  margin-right:20px;
+  font-size:16px;
+  font-weight:bold;
+  color:#FF623E;
+}
+
+.name{
+  font-size:16px;
 }
 
 .product-name{
@@ -287,10 +330,11 @@ input {
 .fa-search {
   position: absolute;
   right: 10px;
-  top: 11px;
+  top: 12px;
   margin: 0;
   color: #FF623E;
 }
+
 label {
   position: absolute;
   left: 20px;
@@ -386,9 +430,9 @@ label {
   font-size:32px;
 }
 
-.swiper-slide.swiper-slide-active > span {
+/* .swiper-slide.swiper-slide-active > span {
   letter-spacing:0;
-}
+} */
 
 .swiper-pagination{
   color:#ffffff;
@@ -416,7 +460,7 @@ label {
 
 
 .round{
-    width:100px;
+width:100px;
   height:100px;
   background-color:#ffffff;
   position:absolute;
@@ -434,6 +478,7 @@ label {
   
   margin-bottom: 160px;
 }
+
 h3{
   width:100%;
   height:100px;
@@ -459,7 +504,7 @@ h3{
   /* 시계방향 */
   /* background-color: aqua; */
   overflow: hidden;
-  box-shadow: 3px 10px 15px -7px rgba(0,0,0,1);
+  box-shadow: 3px 10px 15px -7px rgba(0,0,0,0.7);
 }
 
 .special__box-2{
@@ -644,6 +689,47 @@ h3{
   flex-direction:column;
 }
 
+.farm > ul > li > a{
+  width:360px;
+  height:350px;
+  overflow: hidden;
+}
+
+.farm > ul > li > a img {
+  transition:all 0.3s linear;
+}
+
+.farm > ul > li:hover > a img{
+  transform: scale(1.2);
+}
+
+.health > ul > li > a{
+  width:360px;
+  height:350px;
+  overflow: hidden;
+}
+
+.health > ul > li > a img {
+  transition:all 0.3s linear;
+}
+
+.health > ul > li:hover > a img{
+  transform: scale(1.2);
+}
+
+.sea > ul > li > a{
+  width:360px;
+  height:350px;
+  overflow: hidden;
+}
+
+.sea > ul > li > a img {
+  transition:all 0.3s linear;
+}
+
+.sea > ul > li:hover > a img{
+  transform: scale(1.2);
+}
 
 .bwrap section {
   width:100%;
@@ -718,7 +804,10 @@ h3{
 .text > .name {
   font-size: 24px;
   font-weight: bold;
+  transition: 0.3s;
 }
+
+
 .text > .price {
   font-size:16px;
   display: flex;
