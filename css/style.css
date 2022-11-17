@@ -1127,6 +1127,7 @@ h3{
   width:150px;
   text-align: center;
   border-radius: 100px;
+  transition: 0.5s;
 }
 
 .cs-center__btn div:hover {
