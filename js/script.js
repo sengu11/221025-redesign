@@ -73,3 +73,19 @@
   $(".more-rank").click(function(){
     $(".rank__full-menu").stop().fadeToggle(300);
   });
+
+
+
+  var $window = $(window);
+
+  $window.scroll(function(){
+    var scrollTop = $window.scrollTop();
+
+    if ( scrollTop > 0 ){
+      $(".header__top").addClass("active");
+    }
+
+    else{
+      $(".header__top").removeClass("active");
+    }
+  });
