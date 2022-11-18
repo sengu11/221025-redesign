@@ -1,10 +1,13 @@
 @charset "UTF-8";
 @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
-@font-face {c
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Danjunghae.woff') format('woff');
+@font-face {
+  font-family: "Cafe24Danjunghae";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Danjunghae.woff")
+    format("woff");
   font-weight: normal;
   font-style: normal;
 }
+
 
 
 * { 
@@ -46,7 +49,7 @@ input:focus {
 
 
 .full-menu {
-  width:100%;
+  width:1920px;
   height:285px;
   display: flex;
   justify-content: center;
@@ -348,6 +351,7 @@ input:focus {
   position: relative;
   text-align: center;
   margin-left: 285px;
+  border:1px solid red;
 }
 
 input {
@@ -355,8 +359,7 @@ input {
   height:40px;
   border-radius: 20px;
   border: 1px solid #FF623E;
-  margin: 10px 0;
-  padding: 10px 1px;
+  padding:10px 20px !important;
 }
 .fa-search {
   position: absolute;
@@ -375,7 +378,7 @@ label {
   color:rgb(99, 98, 98);
 }
 
-.input-box__placeholder > label.focus {
+.input-box__placeholder label.focus {
   display: none;
 }
 
@@ -569,6 +572,9 @@ h3{
   top:-30px;
 }
 
+.special-box .special-text > p {
+  font-family: "Cafe24Danjunghae";
+}
 
 
 .special__main{
@@ -698,14 +704,15 @@ h3{
   padding:0 100px;
 }
 
-.btn a {
+.btn span {
   display: block;
   width:100%;
   height:100%;
   font-size: 20px;
+  cursor: pointer;
 }
 
-.btn a.active{
+.btn span.active{
   color:#FF623E;
   font-weight: bold;
   border-bottom:3px solid #FF623E;
@@ -911,6 +918,7 @@ h3{
 
 .recipe__box .name {
   font-size: 20px;
+  font-family: 'Cafe24Danjunghae';
 }
 
 .recipe__box .level{
@@ -1010,7 +1018,8 @@ h3{
 .review-box{
   height:100px;
   display: flex;
-  padding-left:10px;
+  margin:10px 0 20px 0;
+  /* border:1px solid red; */
 }
 
 .review-box a {

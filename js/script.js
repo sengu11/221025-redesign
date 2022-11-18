@@ -1,10 +1,11 @@
 
   $("#search").focusin(function(){
-    $(".input-box__placeholder > label").addClass("focus");
+    $(".input-box__placeholder label").addClass("focus");
   });
   
   $("#search").focusout(function(){
-    $(".input-box__placeholder > label").removeClass("focus");
+    $(".input-box__placeholder label").removeClass("focus");
+    $(this).val("");
   });
   
   
@@ -55,8 +56,8 @@
   
 
 
-  $('.btn a').click(function(){
-    $('.btn a').removeClass('active');
+  $('.btn span').click(function(){
+    $('.btn span').removeClass('active');
     $(this).addClass('active');
 
     var i = $(this).parent().index();
