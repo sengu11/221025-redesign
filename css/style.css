@@ -25,15 +25,21 @@ a{
   color:inherit;
 }
 
+
+.con{
+  width:1200px;
+  margin:0 auto;
+  /* border:1px solid red; */
+}
 .redesign{
-  width:1920px;
+  /* width:1920px; */
   position: relative;
 }
-header{
+/* header{
   width:1920px;
   height:150px;
 /*   background-color:skyblue; */
-}
+} */
 
 input {
   border:none;
@@ -57,7 +63,7 @@ input:focus {
   z-index: 1000;
   left:0;
   top:75px;
-  background-color: antiquewhite;
+  background-color: white;
   border-radius: 0 0 50px 50px;
   overflow:hidden;
   display: none;
@@ -139,7 +145,7 @@ input:focus {
   border-bottom:2px solid #FF623E;
   position:fixed;
   z-index:999;
-  width:1920px;
+  /* width:1920px; */
 }
 
 
@@ -168,7 +174,7 @@ input:focus {
 }
 
 .header__top ul > li:hover {
-  background-color: antiquewhite;
+  background-color: white;
   cursor: pointer;
 }
 
@@ -183,7 +189,7 @@ input:focus {
 }
 
 .header__top > .menu-1 > li:hover > a {
-  background-color: antiquewhite;
+  background-color: white;
   cursor: pointer;
   color:#FF623E;
 }
@@ -292,9 +298,11 @@ input:focus {
 }
 
 .rank-contents {
+  width:210px;
   height:75px;
   display:flex;
   align-items:center;
+  margin-left:15px;
 }
 
 .num {
@@ -333,6 +341,10 @@ input:focus {
   display: flex;
   align-items: center;
   position:relative;
+}
+
+.rank__full-menu{
+  width:214px;
 }
 
 /* input 노멀라이즈 */
@@ -444,6 +456,13 @@ label {
   text-shadow:1px 1px 10px #FC2B05;
 }
 
+.jamong >img,
+.orange > img,
+.lemon > img{
+  width:100%;
+  /* border:1px solid aqua; */
+}
+
 .orange > span{
   text-shadow:1px 1px 10px #B01801;
 }
@@ -536,7 +555,6 @@ h3{
   position: relative;
   border-radius: 50px 0 50px 0;
   /* 시계방향 */
-  /* background-color: aqua; */
   overflow: hidden;
   box-shadow: 3px 10px 15px -7px rgba(0,0,0,0.7);
 }
@@ -1073,9 +1091,9 @@ h3{
 }
 
 .footer{
-  width:1920px;
-  height:420px;
-  background-color: #FFB566;
+  /* width:1920px; */
+  /* height:420px; */
+  background-color: #FE7804;
   color:#ffffff;
 }
 
@@ -1087,7 +1105,7 @@ h3{
   justify-content: space-around;
   align-items: center;
   color:#ffffff;
-  padding:0 160px;
+  /* padding:0 160px; */
 }
 
 
@@ -1101,10 +1119,10 @@ h3{
 }
 
 .mid-contents {
-  width:100%;
+  /* width:100%; */
   display: flex;
   justify-content: space-between;
-  padding:20px 360px;
+  /* padding:20px 360px; */
   color:#ffffff;
 }
 
@@ -1112,6 +1130,7 @@ h3{
   width:400px;
   height:300px;
   padding:57.5px 44.5px;
+  /* background-color: red; */
 }
 .notice__title{
   width:300px;
