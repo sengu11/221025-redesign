@@ -53,6 +53,10 @@ input:focus {
 
 /* 커스텀 */
 
+.header-con{
+  width:100%;
+  margin:0 auto;
+}
 
 .full-menu {
   width:1920px;
@@ -1220,8 +1224,9 @@ h3{
 }
 
 .con-2{
-  border:1px solid red;
+  /* border:1px solid red; */
   width:100%;
+  margin:0 auto;
   /* height:100%; */
   display: flex;
   justify-content: center;
