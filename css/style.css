@@ -38,7 +38,7 @@ a{
 /* header{
   width:1920px;
   height:150px;
-/*   background-color:skyblue; */
+/*   background-color:skyblue;
 } */
 
 input {
@@ -56,7 +56,7 @@ input:focus {
 
 .full-menu {
   width:1920px;
-  height:285px;
+  height:300px;
   display: flex;
   justify-content: center;
   position: absolute;
@@ -124,6 +124,7 @@ input:focus {
   height:75px;
   background-color:#FF623E;
   display:flex;
+  justify-content: center;
 }
 
 .menu-1{
@@ -144,8 +145,10 @@ input:focus {
   background-color: #ffffff;
   border-bottom:2px solid #FF623E;
   position:fixed;
+  display: flex;
+  justify-content: center;
   z-index:999;
-  /* width:1920px; */
+  width:100%;
 }
 
 
@@ -241,6 +244,7 @@ input:focus {
   width:100%;
   height:75px;
   display:flex;
+  justify-content: center;
 }
 
 .rank{
@@ -460,6 +464,8 @@ label {
 .orange > img,
 .lemon > img{
   width:100%;
+  height:100%;
+  object-fit: cover;
   /* border:1px solid aqua; */
 }
 
@@ -650,7 +656,6 @@ h3{
   align-items: center;
   margin-top:40px;
 }
-
 .hidden__button > .buy{
   width:550px;
   height:80px;
@@ -661,7 +666,6 @@ h3{
   font-size: 20px;
   border-radius: 20px;
 }
-
 .hidden__button > .shopping{
   background-color:#ffffff;
   color:#FF623E;
@@ -683,8 +687,6 @@ h3{
   justify-content: center;
   align-items: center;
 }
-
-
 .hidden-main{
   font-weight: bold;
   height:100px;
@@ -1091,21 +1093,20 @@ h3{
 }
 
 .footer{
-  /* width:1920px; */
-  /* height:420px; */
-  background-color: #FE7804;
+  width:100%;
   color:#ffffff;
 }
 
 .footer__top-menu{
-  width:100%;
-  height:44px;
-  border-bottom:1px solid #ffffff;
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
-  color:#ffffff;
-  /* padding:0 160px; */
+  padding: 0px 10px;
+  gap: 380px;
+  width: 100%;
+  height: 44px;
+  border-bottom: 1px solid #FFFFFF;
 }
 
 
@@ -1121,7 +1122,7 @@ h3{
 .mid-contents {
   /* width:100%; */
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   /* padding:20px 360px; */
   color:#ffffff;
 }
@@ -1215,4 +1216,14 @@ h3{
 .copy{
   text-align: center;
   font-size: 15px;
+  /* background-color: yellow; */
+}
+
+.con-2{
+  border:1px solid red;
+  width:100%;
+  /* height:100%; */
+  display: flex;
+  justify-content: center;
+  background-color: #FE7804;
 }
