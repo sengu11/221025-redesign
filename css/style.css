@@ -29,7 +29,6 @@ a{
 .con{
   width:1200px;
   margin:0 auto;
-  /* border:1px solid red; */
 }
 .redesign{
   /* width:1920px; */
@@ -56,10 +55,11 @@ input:focus {
 .header-con{
   width:100%;
   margin:0 auto;
+  background-color: #FF623E;
 }
 
 .full-menu {
-  width:1920px;
+  width:100%;
   height:300px;
   display: flex;
   justify-content: center;
@@ -67,11 +67,10 @@ input:focus {
   z-index: 1000;
   left:0;
   top:75px;
-  background-color: white;
   border-radius: 0 0 50px 50px;
   overflow:hidden;
   display: none;
-
+  background-color:#ffffff;
 }
 
 .full-menu > ul {
@@ -133,9 +132,8 @@ input:focus {
 
 .menu-1{
   display:flex;
-  width:885px;
+  width:525px;
   height:75px;
-  justify-content:center;
   align-items:center;
 
 }
@@ -145,7 +143,7 @@ input:focus {
   box-sizing: border-box;
 }
 
-.header__top.active{
+.header__con.active{
   background-color: #ffffff;
   border-bottom:2px solid #FF623E;
   position:fixed;
@@ -155,23 +153,36 @@ input:focus {
   width:100%;
 }
 
+.all-menu{
+  color:#ffffff;
+  font-weight:bold;
+}
 
-.header__top.active > .menu-1 > .scroll-menu > a {
+
+
+.header__con.active > .menu-1 > .scroll-menu > a {
   color:#FF623E;
 }
 
-.header__top.active > .menu-2 > li > a{
+.header__con.active > .menu-2 > li > a{
   color: #FF623E;
 }
 
-.header__top.active > .scroll-logo{
+.header__con.active > .scroll-logo{
   display: block;
+  width:150px;
+  height:75px;
+  padding:0 37.5px;
 }
 
-.header__top.active > .logo {
+.header__con.active > .logo {
   display: none;}
 
-  .header__top.active > ul > li > a > .icon > i{
+  .header__con.active > ul > li > a > .icon > i{
+    color: #ff623e;
+  }
+
+  .header__con.active > ul > li > a > .name{
     color: #ff623e;
   }
 
@@ -181,7 +192,7 @@ input:focus {
 }
 
 .header__top ul > li:hover {
-  background-color: white;
+  background-color: #ffffff;
   cursor: pointer;
 }
 
@@ -195,16 +206,19 @@ input:focus {
   height:75px;
 }
 
-.header__top > .menu-1 > li:hover > a {
-  background-color: white;
+.header__con > .menu-1 > li:hover > a {
+  background-color: #ffffff;
   cursor: pointer;
   color:#FF623E;
 }
 
-.header__top > .menu-2 > li:hover > a {
-  background-color: antiquewhite;
+.header__con > .menu-2 > li:hover > a {
   cursor: pointer;
   color:#FF623E;
+}
+
+.header__con > .menu-2 > li:hover > a > .name{
+  color:#ff623e;
 }
 
 .scroll-logo{
@@ -217,9 +231,9 @@ input:focus {
 
 .menu-2{
   display:flex;
-  width:885px;
+  justify-content:flex-end;
+  width:525px;
   height:100%;
-  justify-content:center;
 }
 
 .icon > .fa-solid{
@@ -249,24 +263,26 @@ input:focus {
   height:75px;
   display:flex;
   justify-content: center;
+  background-color:#ffffff;
 }
 
+
+
 .rank{
-  width: 885px;
+  width:600px;
   height:75px;
-  display:flex;
+  margin-right:386px;
 }
 .rank .swiper {
-  width:214px;
+  width:256px;
   height:75px;
-  margin-left:280px;
-  /* background-color:pink; */
+  display:flex;
+  justify-content:flex-start;
 }
 
 .more-rank{
   width:24px;
   height:24px;
-/*   border:1px solid yellow; */
   transition: all 0.3s linear;
 }
 
@@ -293,14 +309,14 @@ input:focus {
 
 
 .rank__full-menu{
-  width:210px;
+  width:256px;
   height:749px;
   border:2px solid #FF623E;
   z-index: 998;
   background-color: #ffffff;
   position: absolute;
   top:150px;
-  left:280px;
+  left:415px;
   border-top:none;
   display: none;
 }
@@ -310,7 +326,7 @@ input:focus {
   height:75px;
   display:flex;
   align-items:center;
-  margin-left:15px;
+  margin-left:30px;
 }
 
 .num {
@@ -321,7 +337,9 @@ input:focus {
 }
 
 .name{
+  color:#000000;
   font-size:16px;
+  font-weight:bold;
 }
 
 .product-name{
@@ -338,22 +356,23 @@ input:focus {
   height:75px;
   display:flex;
   align-items: center;
-  /* background-color: antiquewhite; */
+}
+
+.header__con-2{
+  display:flex;
+  justify-content:space-between;
 }
 
 .search-box{
-  width:885px;
+  width:600px;
   height:100%;
-  /* background-color: antiquewhite; */
-  margin-left:150px;
   display: flex;
+  justify-content:flex-end;
   align-items: center;
   position:relative;
 }
 
-.rank__full-menu{
-  width:214px;
-}
+
 
 /* input 노멀라이즈 */
 input {
@@ -869,6 +888,7 @@ h3{
   font-size: 24px;
   font-weight: bold;
   transition: 0.3s;
+  color:#000000;
 }
 
 
@@ -943,6 +963,7 @@ h3{
 .recipe__box .name {
   font-size: 20px;
   font-family: 'Cafe24Danjunghae';
+  color:#000000;
 }
 
 .recipe__box .level{
@@ -1099,28 +1120,45 @@ h3{
 .footer{
   width:100%;
   color:#ffffff;
+  background-color: #FF623E;
 }
 
 .footer__top-menu{
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding: 0px 10px;
-  gap: 380px;
   width: 100%;
-  height: 44px;
+  height: 45px;
   border-bottom: 1px solid #FFFFFF;
 }
 
+.header__con{
+  display:flex;
+}
 
+.left-menu{
+  justify-content: space-around;
+  width:575px;
+}
+
+.right-icon{
+  width:210px;
+  display:flex;
+  justify-content:center;
+}
 
 .left-menu > a {
-  padding: 0 70px;
+  padding: 0 20px;
 }
 
 .right-icon > a {
   padding: 0 10px;
+}
+
+.icon-box > a > .name{
+  color:#ffffff;
 }
 
 .mid-contents {
