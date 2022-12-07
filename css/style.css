@@ -158,7 +158,10 @@ input:focus {
   font-weight:bold;
 }
 
-
+.header__con.active .scroll-menu:hover > .all-menu{
+  background-color: #FF623E;
+  color:#ffffff;
+}
 
 .header__con.active > .menu-1 > .scroll-menu > a {
   color:#FF623E;
@@ -186,6 +189,9 @@ input:focus {
     color: #ff623e;
   }
 
+
+
+
 .menu-2 > li{
   box-sizing: border-box;
   padding:15px;
@@ -194,6 +200,14 @@ input:focus {
 .header__top ul > li:hover {
   background-color: #ffffff;
   cursor: pointer;
+}
+
+.header__con.active .scroll-menu:hover{
+  background-color: #FF623E;
+}
+
+.header__con.active .icon-box:hover{
+  background-color: #FF623E;
 }
 
 .header__top > .menu-1 > li > a,
@@ -217,8 +231,13 @@ input:focus {
   color:#FF623E;
 }
 
+
 .header__con > .menu-2 > li:hover > a > .name{
   color:#ff623e;
+}
+
+.header__con.active > .menu-2 > li:hover > a > .name{
+  color:#ffffff;
 }
 
 .scroll-logo{
@@ -227,6 +246,10 @@ input:focus {
 
 .header__top ul > li:hover > a > .icon > i {
   color:#FF623E;
+}
+
+.header__con.active ul > li:hover > a > .icon > i{
+  color:#ffffff;
 }
 
 .menu-2{
@@ -1134,6 +1157,15 @@ h3{
   border-bottom: 1px solid #FFFFFF;
 }
 
+.footer__top-menu-con{
+  width:1200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px;
+}
+
 .header__con{
   display:flex;
 }
@@ -1146,7 +1178,7 @@ h3{
 .right-icon{
   width:210px;
   display:flex;
-  justify-content:center;
+  justify-content:flex-end;
 }
 
 .left-menu > a {
@@ -1261,12 +1293,3 @@ h3{
   /* background-color: yellow; */
 }
 
-.con-2{
-  /* border:1px solid red; */
-  width:100%;
-  margin:0 auto;
-  /* height:100%; */
-  display: flex;
-  justify-content: center;
-  background-color: #FE7804;
-}
