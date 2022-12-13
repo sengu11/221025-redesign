@@ -83,10 +83,10 @@
     var scrollTop = $window.scrollTop();
 
     if ( scrollTop > 0 ){
-      $(".header__con").addClass("active");
+      $(".header__top").addClass("active");
     }
 
     else{
-      $(".header__con").removeClass("active");
+      $(".header__top").removeClass("active");
     }
   });
